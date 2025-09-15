@@ -1,0 +1,4 @@
+for file in $(find . -type f -name "*.c"); do
+    cp "$file" "$file.orig"
+    echo "Created backup: $file.orig"
+done
